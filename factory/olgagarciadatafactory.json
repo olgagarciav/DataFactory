@@ -1,0 +1,9 @@
+{
+	"name": "olgagarciadatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "02d4574f-0187-49a3-8074-297505b13e24",
+		"tenantId": "6332a9c5-ed14-441c-8229-dc450c6cf144"
+	}
+}

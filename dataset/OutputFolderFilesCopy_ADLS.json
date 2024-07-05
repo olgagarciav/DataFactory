@@ -1,0 +1,33 @@
+{
+	"name": "OutputFolderFilesCopy_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LINK_ADLS_DATAFACTORY",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ArchivoOutput": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().ArchivoOutput",
+					"type": "Expression"
+				},
+				"folderPath": "capa_bronce",
+				"fileSystem": "olgagarcia"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
