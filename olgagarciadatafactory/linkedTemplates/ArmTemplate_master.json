@@ -7,9 +7,25 @@
 			"metadata": "Nombre de instancia de Data Factory",
 			"defaultValue": "olgagarciadatafactory"
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks1\""
+		},
+		"AzureDatabricks_DataFactory_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks_DataFactory\""
+		},
 		"LINK_ADLS_DATAFACTORY_accountKey": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accountKey\"de \"LINK_ADLS_DATAFACTORY\""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0715-024049-fw1hzat1"
+		},
+		"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0715-024049-fw1hzat1"
 		},
 		"LINK_ADLS_DATAFACTORY_properties_typeProperties_url": {
 			"type": "string",
@@ -42,8 +58,20 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
+					"AzureDatabricks_DataFactory_accessToken": {
+						"value": "[parameters('AzureDatabricks_DataFactory_accessToken')]"
+					},
 					"LINK_ADLS_DATAFACTORY_accountKey": {
 						"value": "[parameters('LINK_ADLS_DATAFACTORY_accountKey')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId')]"
 					},
 					"LINK_ADLS_DATAFACTORY_properties_typeProperties_url": {
 						"value": "[parameters('LINK_ADLS_DATAFACTORY_properties_typeProperties_url')]"

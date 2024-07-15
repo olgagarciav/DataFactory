@@ -5,8 +5,20 @@
 		"factoryName": {
 			"value": "olgagarciadatafactory"
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks_DataFactory_accessToken": {
+			"value": ""
+		},
 		"LINK_ADLS_DATAFACTORY_accountKey": {
 			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0715-024049-fw1hzat1"
+		},
+		"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
+			"value": "0715-024049-fw1hzat1"
 		},
 		"LINK_ADLS_DATAFACTORY_properties_typeProperties_url": {
 			"value": "https://olgagarcia.dfs.core.windows.net/"
